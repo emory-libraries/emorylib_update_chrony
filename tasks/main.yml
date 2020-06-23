@@ -12,6 +12,7 @@
     insertafter: 'Please consider joining the pool (http://www.pool.ntp.org/join.html).'
     state: present
     line: '{{ chrony_aws_server }}'
+    path: '{{ chrony_path }}' 
 
 - name: Restart Chrony service
   systemd:
